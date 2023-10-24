@@ -13,13 +13,7 @@ variables:
 - name: BRIDGE_POLARIS_PROJECT_NAME
   value: 'JW-$(Build.Repository.Name)'
 
-steps:
-- task: JavaToolInstaller@0
-  displayName: 'Use Java 17'
-  inputs:
-    versionSpec: 17
-    jdkArchitectureOption: x64
-    jdkSourceOption: PreInstalled
+
 
 - task: Maven@4
   displayName: 'Maven Build'
