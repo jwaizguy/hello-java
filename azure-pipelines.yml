@@ -10,6 +10,7 @@ variables:
   value: 'JW-Hello-$(Build.Repository.Name)'
 - name: BRIDGE_POLARIS_PROJECT_NAME
   value: 'JW-$(Build.Repository.Name)'
+steps:  
 - task: SSH@0
   inputs:
     sshEndpoint: 'SSHagent'
