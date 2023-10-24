@@ -6,7 +6,6 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-- group: group
 - name: BRIDGE_POLARIS_APPLICATION_NAME
   ## value: 'JW-Hello-$(Build.Repository.Name)'
   value: 'AJW'
