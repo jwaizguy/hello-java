@@ -20,8 +20,10 @@ steps:
     bridge_polaris_accessToken: 'apf9q719j52cpdso23iookbodujh3311bt94k5l7natmjqgvgql6uasqknrg0e2chp05os0sj49ui'
     bridge_polaris_application_name: 'JWtest'
     bridge_polaris_project_name: 'HelloJava'
-    bridge_polaris_assessment_types: 'sast,sca'
+    bridge_polaris_assessment_types: 'sca'
     bridge_polaris_branch_name: 'main'
+    polarisPRCommentEnabled: true
+    polarisReportsSarifCreate: true
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
