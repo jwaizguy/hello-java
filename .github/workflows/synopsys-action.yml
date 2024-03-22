@@ -18,7 +18,7 @@ jobs:
           java-version: 17
           distribution: microsoft
           cache: maven
-      - name: NEW Polaris Scan 1
+      - name: NEW Polaris Scan 17
         uses: synopsys-sig/synopsys-action@v1.8.0
         with:
           ### SCANNING: Required fields
@@ -31,9 +31,9 @@ jobs:
           
          
           ### PULL REQUEST COMMENTS: Uncomment below to enable
-          # polaris_prComment_enabled: ${{ github.event_name == 'pull_request' && 'true' || 'false' }}
+           polaris_prComment_enabled: ${{ github.event_name == 'pull_request' && 'true' || 'false' }}
           #polaris_prComment_enabled: true 
-          #github_token: ${{ secrets.git_pat }} # Required when PR comments is enabled
+          github_token: ${{ secrets.git_pat }} # Required when PR comments is enabled
 
       #- name: Save Logs
        # if: always()
