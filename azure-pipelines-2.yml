@@ -18,8 +18,10 @@ steps:
     scanType: 'polaris'
     bridge_polaris_application_name: 'JWtest'
     bridge_polaris_project_name: 'HelloJava'
-    bridge_polaris_assessment_types: 'sast,sca'
+    bridge_polaris_assessment_types: 'sca'
     bridge_polaris_branch_name: 'main'
+    polarisPRCommentEnabled: true
+    polarisReportsSarifCreate: true
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
