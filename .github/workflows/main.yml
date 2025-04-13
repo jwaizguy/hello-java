@@ -32,13 +32,15 @@ jobs:
          
           ### PULL REQUEST COMMENTS: Uncomment below to enable
           polaris_prComment_enabled: ${{ github.event_name == 'pull_request' && 'true' || 'false' }}
-          polaris_prComment_enabled: true 
-          github_token: ${{ secrets.git_pat }} # Required when PR comments is enabled
+          polaris_reports_sarif_create: ${{ github.event_name != 'pull_request' && 'true' || 'false' }}
+          polaris_upload_sarif_report: ${{ github.event_name != 'pull_request' && 'true' || 'false' }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # github_token: ${{ secrets.git_pat }} # Required when PR comments is enabled
 
-      #- name: Save Logs
-       # if: always()
-       # uses: actions/upload-artifact@v3
-       # with:
-        # name: bridge-logs
-         #path: ${{ github.workspace }}/.bridge/**/*.json
+      - name: Save Logs
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: bridge-logs
+          path: ${{ github.workspace }}/.bridge/**/*.json
           
