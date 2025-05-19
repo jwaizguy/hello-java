@@ -28,7 +28,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Black Duck Security Scan
-      uses: blackduck-inc/black-duck-security-scan@v2.0.0 
+      uses: blackduck-inc/black-duck-security-scan@v2.1.1 
       with:
           ### SCANNING: Required fields
           polaris_server_url: ${{ secrets.POLARIS_SERVER_URL }}
