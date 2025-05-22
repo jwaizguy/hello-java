@@ -28,7 +28,7 @@
     </dependency>
     <!--  https://github.com/openssl/openssl-->
     <dependency>
-      <groupId>https://github.com/openssl/openssl</groupId>
+      <groupId>https://github.com/openssl/openssl/tree/openssl-3.1</groupId>
       <artifactId>openssl</artifactId>
       <version>2.3.3</version>
     </dependency>
