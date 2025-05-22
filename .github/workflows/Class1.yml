@@ -44,7 +44,7 @@ jobs:
             polaris_assessment_types: "SCA"
             polaris_application_name: "JoseWaizman2"
             polaris_project_name: "hello-java"
-            polaris_branch_name: "jw-13"
+            polaris_branch_name: "jw-15"
     # Flag to enable pull request comments based on Polaris scan result
             polaris_prComment_enabled: "true"
             github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -55,7 +55,7 @@ jobs:
     # Polaris test type to trigger signature scan or package manager scan
             # polaris_test_sca_type: "SCA-SIGNATURE"
             # Flag to enable/disable Polaris SARIF report generation
-            polaris_reports_sarif_create: yes
+            polaris_reports_sarif_create: "true"
             # File path including file name where Polaris SARIF report should be created
             # polaris_reports_sarif_file_path: # optional
             # Indicates what SAST/SCA issues severity categories to include in Polaris SARIF file report
@@ -65,7 +65,7 @@ jobs:
     # Enum to indicate which assessment issues type to include in Polaris SARIF file report
             polaris_reports_sarif_issue_types: "SAST,SCA"
         # Flag to enable/disable uploading of Polaris SARIF report to GitHub Advanced Security
-            polaris_upload_sarif_report: yes
+            polaris_upload_sarif_report: "true"
         # Specifies if the workflow should wait for the analysis to complete. Default value: true. If set to false, post merge workflows like PR comment, Fix PR, SARIF etc will not be applicable.
             # polaris_waitForScan: # optional
           # The test mode type of this scan
@@ -85,11 +85,11 @@ jobs:
           # Github token to be used for git related rest operation
             # github_token: # optional
           # To include diagnostics info and export as zip
-            include_diagnostics: no
+            include_diagnostics: "false"
           # Number of days to keep the diagnostics files downloadable
             #diagnostics_retention_days: # optional
           # To enable creation of badges on the GitHub repository for polaris
-            polaris_policy_badges_create: yes
+            polaris_policy_badges_create: "true"
             detect_args: '--detect.accuracy.required=NONE'
           # To limit number of badges to be displayed on the GitHub repository for polaris
             # polaris_policy_badges_maxCount: # optional
