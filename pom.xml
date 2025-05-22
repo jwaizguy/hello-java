@@ -30,7 +30,7 @@
     <dependency>
       <groupId>https://github.com/openssl/openssl/releases/download/openssl-3.5.0/openssl-3.5.0.tar.gz</groupId>
       <artifactId>openssl</artifactId>
-      <version>2.3.3</version>
+      <version>3.5.0</version>
     </dependency>
   </dependencies>
 </project>
