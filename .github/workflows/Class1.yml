@@ -51,7 +51,7 @@ jobs:
     # List of severities for which the PR Comments should be created
             polaris_prComment_severities: "CRITICAL,HIGH,MEDIUM,LOW"
     # Polaris parent branch name
-            polaris_branch_parent_name: main
+            polaris_branch_parent_name: "main"
     # Polaris test type to trigger signature scan or package manager scan
             # polaris_test_sca_type: "SCA-SIGNATURE"
             # Flag to enable/disable Polaris SARIF report generation
