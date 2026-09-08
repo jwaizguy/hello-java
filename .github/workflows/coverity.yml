@@ -1,5 +1,5 @@
 # Coverity on a self-hosted runner
-name: coverity
+name: coverity2
 
 on:
   push:
